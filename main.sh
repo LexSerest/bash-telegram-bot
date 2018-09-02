@@ -44,7 +44,7 @@ while true; do
         export reply_id="$(echo "$updates" | jq ".result[$i].message.reply_to_message.message_id")"
         export reply_text="$(echo "$updates" | jq ".result[$i].message.reply_to_message.text" | escape )"
         export message_text="$(echo "$updates" | jq ".result[$i].message.text" | escape )"
-        ./commands.sh 
+        ./commands.sh & # for multithreading
     }
 
     sleep 0.3
