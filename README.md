@@ -1,6 +1,6 @@
 # Telegram bot written in bash
 
-Author of idea -  https://gitlab.com/madicine6/sadsedbot 
+Author of idea - https://gitlab.com/madicine6/eBashBot 
 
 # Install & Run
 ```bash
